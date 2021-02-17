@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Utj3Biacjx/3S0fK8jj64LLaLshVTfnpjm8j0YXJptOgZIw1eTauT1WMYacOH465l9rE/ds9wk8MIoYLgSa/yw==",
+  "dgSpecHash": "kIfCH8NAIhirUGWOyp7evyheobaTy8ZKswBGYAJoQcXECqhViKJfciKeW+vSllFT/gTwS2Ao5GzqFhM9/h3/FQ==",
   "success": true,
-  "projectFilePath": "C:\\repos\\Banking\\Banking\\Banking.csproj",
+  "projectFilePath": "C:\\repos\\banking-bc31\\Banking\\Banking.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

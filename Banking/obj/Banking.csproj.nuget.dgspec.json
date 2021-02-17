@@ -1,21 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\Banking\\Banking\\Banking.csproj": {}
+    "C:\\repos\\banking-bc31\\Banking\\Banking.csproj": {}
   },
   "projects": {
-    "C:\\repos\\Banking\\Banking\\Banking.csproj": {
+    "C:\\repos\\banking-bc31\\Banking\\Banking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\Banking\\Banking\\Banking.csproj",
+        "projectUniqueName": "C:\\repos\\banking-bc31\\Banking\\Banking.csproj",
         "projectName": "Banking",
-        "projectPath": "C:\\repos\\Banking\\Banking\\Banking.csproj",
+        "projectPath": "C:\\repos\\banking-bc31\\Banking\\Banking.csproj",
         "packagesPath": "C:\\Users\\gpdou\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\Banking\\Banking\\obj\\",
+        "outputPath": "C:\\repos\\banking-bc31\\Banking\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\gpdou\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -57,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

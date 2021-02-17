@@ -13,7 +13,6 @@ namespace Banking {
         public void Deposit(decimal amount) {
             if(amount > 0) {
                 Balance += amount;
-
             }
         }
         public void Withdraw(decimal amount) {
