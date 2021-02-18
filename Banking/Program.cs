@@ -4,7 +4,8 @@ namespace Banking {
     class Program {
         static void Main(string[] args) {
 
-            var sav1 = new SavingsComposition();
+            //var sav1 = new SavingsComposition();
+            var sav1 = new SavingsInheritance();
             sav1.InterestRate = 0.13m;
             sav1.Deposit(50);
             sav1.Withdraw(20);

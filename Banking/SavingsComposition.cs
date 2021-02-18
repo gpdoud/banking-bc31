@@ -5,6 +5,7 @@ using System.Text;
 namespace Banking {
     class SavingsComposition {
 
+        #region InsideClass       
         public decimal InterestRate { get; set; } = 0.12m;
 
         public Account account { get; set; }
@@ -12,6 +13,7 @@ namespace Banking {
         private decimal Interest(int months) {
             return account.Balance * (InterestRate / 12) * months;
         }
+        
         public void PayInterest(int months) {
             var interest = Interest(months);
             Deposit(interest);
@@ -31,5 +33,6 @@ namespace Banking {
         public SavingsComposition() {
             this.account = new Account("4", "Savings Account");
         }
+        #endregion
     }
 }
