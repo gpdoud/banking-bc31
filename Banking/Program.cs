@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Banking.Exceptions;
+
+using System;
 
 namespace Banking {
     class Program {
@@ -9,9 +11,18 @@ namespace Banking {
             sav1.InterestRate = 0.13m;
             sav1.Deposit(50);
             sav1.Withdraw(20);
-            sav1.Withdraw(50);
-            sav1.Deposit(-10);
-            sav1.Withdraw(-10);
+            try {
+                //sav1.Withdraw(50);
+                //sav1.Deposit(-10);
+                sav1.Withdraw(-10);
+            } catch (AmountMustBePositiveException ambpex) {
+                Console.WriteLine(ambpex.Message);
+            } catch (InsufficientFundsException ifex) {
+                Console.WriteLine(ifex.Message);
+                return;
+            } finally {
+
+            }
             sav1.Deposit(70);
             Console.WriteLine($"Savings balance is {sav1.Balance}");
             sav1.PayInterest(3);

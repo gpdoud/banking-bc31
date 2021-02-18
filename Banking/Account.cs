@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 
+using Banking.Exceptions;
+
 namespace Banking {
 
     class Account {
@@ -11,18 +13,19 @@ namespace Banking {
         public decimal Balance { get; private set; } = 0;
 
         public void Deposit(decimal amount) {
-            if(amount > 0) {
-                Balance += amount;
+            if(amount <= 0) {
+                throw new AmountMustBePositiveException();
             }
+            Balance += amount;
         }
         public void Withdraw(decimal amount) {
-            if(amount < 0) {
-                return;
+            if(amount <= 0) {
+                throw new AmountMustBePositiveException();
             }
             if(Balance >= amount) {
                 Balance -= amount;
             } else {
-                Console.WriteLine($"Insufficient funds!");
+                throw new InsufficientFundsException(Balance, amount);
             }
         }
         public Account() : this("DefAcct0", "Default Account Description") { }
