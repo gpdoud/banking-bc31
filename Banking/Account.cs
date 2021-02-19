@@ -20,7 +20,7 @@ namespace Banking {
         }
         public void Withdraw(decimal amount) {
             if(amount <= 0) {
-                throw new AmountMustBePositiveException();
+                throw new AmountMustBePositiveException("Amount less then zero");
             }
             if(Balance >= amount) {
                 Balance -= amount;
